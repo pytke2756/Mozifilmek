@@ -7,15 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <div>
         <label for="nev">Add meg a film nevét: </label>
         <input type="text" name="nev" id="nev"><br>
         <label for="nev">Add meg a film rendezőjét: </label>
         <input type="text" name="rendezo" id="rendezo"><br>
         <label for="nev">Add meg a film kiadási évét: </label>
         <input type="text" name="kiadasi_ev" id="kiadasi_ev"><br>
-        <input type="submit" id="hozzad_ad" value="Hozzáad">
-    </form>
+        <button id="hozzad_ad">Hozzáad</button><br>
+        <button id="listazas">Listázás</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Rendező</th>
+                <th>Kiadási év</th>
+            </tr>
+        </thead>
+        <tbody id="adatok">
+
+        </tbody>
+    </table>
     <script src="script.js"></script>
 </body>
 </html>
